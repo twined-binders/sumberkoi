@@ -13,8 +13,13 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    @extends('layout')
+
+    @section('konten')
+
     <div>
         <h1 class="text-xl">Ini halaman Kontak</h1>
     </div>
+    @endsection
 </body>
 </html>
