@@ -176,23 +176,33 @@
             <div class="text-center">
                 <h1 class="text-4xl font-bold text-sky-400">Apa Yang Pelanggan Kami Katakan ?</h1>
             </div>
-            <div>
-                <figure class="">
-                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
-                        <p class="my-4">If you care for your time, I hands down would go with this."</p>
-                    </blockquote>
-                    <figcaption class="flex items-center justify-center space-x-3">
-                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
-                        <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div>Bonnie Green</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">Developer at Open AI</div>
-                        </div>
-                    </figcaption>    
-                </figure>
+            <div class="mt-16">
+                <div class="flex justify-center gap-16 text-center text-slate-400">
+                    <div class="w-60">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam. Explicabo, laborum!</blockquote>
+                        <img src="{{ url('/img/user.svg') }}" alt="pelanggan" class="mx-auto mt-8">
+                    </div>
+                    <div class="w-60">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam. Explicabo, laborum!</blockquote>
+                        <img src="{{ url('/img/user.svg') }}" alt="pelanggan" class="mx-auto mt-8">
+                    </div>
+                    <div class="w-60">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam. Explicabo, laborum!</blockquote>
+                        <img src="{{ url('/img/user.svg') }}" alt="pelanggan" class="mx-auto mt-8">
+                    </div>
+                </div>
             </div>
         </div>
         {{-- Testimoni --}}
+
+        {{-- Lokasi --}}
+        <div class="mt-48 text-center">
+            <h1 class="uppercase mb-14 text-4xl font-bold text-sky-400">Lokasi kami</h1>
+            <div class="w-11/12 mx-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15801.359970283922!2d112.13199534006803!3d-8.066761175124686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78efec98694659%3A0x677a42de5b9131d6!2sSumber%20Koi%20Blitar!5e0!3m2!1sid!2sid!4v1689830762402!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        {{-- Lokasi --}}
     </div>
 </body>
 </html>
