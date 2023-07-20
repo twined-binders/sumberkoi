@@ -16,8 +16,39 @@
     @extends('layout')
 
     @section('konten')
-    <div>
-        <h1 class="text-xl">Ini halaman Artikel</h1>
+    <div class="mt-14 px-8 mb-14">
+        <div class="shadow-lg rounded-lg p-6 mb-7">
+            <div>
+                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
+            </div>
+            <hr class="mb-5 mt-7">
+        </div>
+
+        <div class="shadow-lg rounded-lg p-6 mb-7">
+            <div>
+                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
+            </div>
+            <hr class="mb-5 mt-7">
+        </div>
+
+        <div class="shadow-lg rounded-lg p-6 mb-7">
+            <div>
+                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
+            </div>
+            <hr class="mb-5 mt-7">
+        </div>
+
+        <div class="shadow-lg rounded-lg p-6 mb-7">
+            <div>
+                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
+            </div>
+            <hr class="mb-5 mt-7">
+        </div>
+
     </div>
     @endsection
 </body>
