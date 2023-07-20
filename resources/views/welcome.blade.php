@@ -25,7 +25,7 @@
                     <div class="text-white">
                         <h2 class="mb-4 text-5xl font-semibold uppercase">sumber koi blitar</h2>
                         <h4 class="text-xl font-semibold uppercase mb-24">pusat budidaya dan bisnis koi</h4>
-                        <button type="button" class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-slate-200 hover:text-slate-800 hover:font-semibold" data-te-ripple-init data-te-ripple-color="light">
+                        <button type="button" class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-[#25D366] hover:text-neutral-50 hover:font-semibold" data-te-ripple-init data-te-ripple-color="light">
                             Hubungi Kami
                         </button>
                     </div>
