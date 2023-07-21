@@ -40,10 +40,10 @@
             <div>
                 <textarea id="artikel" name="artikel">{{old('artikel', $data->artikel)}}</textarea>
             </div>
-            <div class="mt-10">
+            <div class="mt-10 mb-14">
                 <div class="flex justify-end gap-7">
-                    <button type="submit">Simpan</button>
-                    <a href="{{ route('post.index') }}">Kembali</a>
+                    <button type="submit" class="bg-green-500 text-slate-100 px-3 py-3 rounded-lg hover:scale-105 duration-200 font-medium hover:bg-green-400">Simpan</button>
+                    <a href="{{ route('post.index') }}" class="bg-blue-500 text-slate-100 px-3 py-3 rounded-lg hover:scale-105 duration-200 font-medium hover:bg-blue-400 hover:text-slate-100 hover:no-underline">Kembali</a>
                 </div>
             </div>
         </div>
