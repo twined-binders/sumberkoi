@@ -59,11 +59,11 @@
                 <div class="rounded-lg border p-6 shadow-lg">
                     <p class="text-3xl text-blue-300">Lokasi Kami</p>
                     <hr class="my-4" />
-                    <p class="text-justify text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facere, reprehenderit, itaque nulla qui dignissimos ipsum atque vitae sint eveniet corporis animi, dolorum officiis ad neque quisquam iusto? Ducimus, commodi. Non tenetur aut, voluptate veritatis ut, officia voluptas nobis tempore voluptatibus odit iusto fuga officiis eaque aliquid cupiditate nemo similique architecto asperiores consequuntur adipisci repudiandae amet vero? Dignissimos, reprehenderit laboriosam veniam dolores pariatur fuga beatae temporibus odit, sit magnam excepturi nihil mollitia harum soluta a totam placeat recusandae. Natus mollitia autem voluptate optio suscipit porro quam commodi aliquid officiis quod placeat, consectetur ducimus repudiandae velit veniam ratione. Distinctio, natus perferendis. <br />
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi harum expedita distinctio quibusdam soluta doloremque, cupiditate laboriosam quo cumque rerum accusamus dolorum deleniti magni, corporis quia sunt commodi consequuntur facere! Iusto veritatis repudiandae temporibus iure perferendis consequatur eum fuga dolorem reiciendis, obcaecati libero odit officia? Ratione, ipsam. Ullam, error!
-                    </p>
+                    <div class="text-center mb-10">
+                        <div class="w-full mx-auto">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15801.359970283922!2d112.13199534006803!3d-8.066761175124686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78efec98694659%3A0x677a42de5b9131d6!2sSumber%20Koi%20Blitar!5e0!3m2!1sid!2sid!4v1689830762402!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
