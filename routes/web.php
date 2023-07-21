@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Postingan;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/artikel', function () {
-    return view('artikel');
+    $data = DB::table('post')->get();
+    return view('artikel', compact('data'));
 })->name('artikel');
 
 Route::get('/tentangkami', function () {

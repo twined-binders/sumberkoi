@@ -17,38 +17,21 @@
 
     @section('konten')
     <div class="mt-14 px-8 mb-14">
+        @forelse ($data as $artikel)
         <div class="shadow-lg rounded-lg p-6 mb-7">
             <div>
-                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
-                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
+                <h2 class="font-bold mb-4">{{$artikel->judul}}</h2>
+                <p class="text-sm text-slate-600">{{ Illuminate\Support\Str::limit($artikel->artikel, 300) }}</p>
             </div>
             <hr class="mb-5 mt-7">
-        </div>
-
-        <div class="shadow-lg rounded-lg p-6 mb-7">
-            <div>
-                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
-                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
+            <div class="mt-4 flex gap-12 text-slate-400">
+                <p>{{$artikel->created_at}}</p>
+                <p>Penulis: {{$artikel->penulis}}</p>
             </div>
-            <hr class="mb-5 mt-7">
         </div>
+        @empty
 
-        <div class="shadow-lg rounded-lg p-6 mb-7">
-            <div>
-                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
-                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
-            </div>
-            <hr class="mb-5 mt-7">
-        </div>
-
-        <div class="shadow-lg rounded-lg p-6 mb-7">
-            <div>
-                <h2 class="font-bold mb-4">Tentang Ikan Koi</h2>
-                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit corporis excepturi, itaque vitae saepe quae quas assumenda, tenetur cum, iste dolorum. Ipsam aperiam hic quia, tenetur libero tempora blanditiis?</p>
-            </div>
-            <hr class="mb-5 mt-7">
-        </div>
-
+        @endforelse
     </div>
     @endsection
 </body>

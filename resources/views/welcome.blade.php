@@ -157,15 +157,15 @@
                     <div class="flex justify-center gap-16 text-center text-slate-400">
                         <div class="w-60">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam. Explicabo, laborum!</p>
-                            <img src="{{ url('/img/user.svg') }}" alt="pelanggan" class="mx-auto mt-8">
+                            <img src="{{ url('/img/pelanggan.jpg') }}" alt="pelanggan" class="mx-auto mt-8 shadow rounded-full h-24">
                         </div>
                         <div class="w-60">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam. Explicabo, laborum!</p>
-                            <img src="{{ url('/img/user.svg') }}" alt="pelanggan" class="mx-auto mt-8">
+                            <img src="{{ url('/img/pelanggan.jpg') }}" alt="pelanggan" class="mx-auto mt-8 shadow rounded-full h-24">
                         </div>
                         <div class="w-60">
                             <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam. Explicabo, laborum!</blockquote>
-                            <img src="{{ url('/img/user.svg') }}" alt="pelanggan" class="mx-auto mt-8">
+                            <img src="{{ url('/img/pelanggan.jpg') }}" alt="pelanggan" class="mx-auto mt-8 shadow rounded-full h-24">
                         </div>
                     </div>
                 </div>
