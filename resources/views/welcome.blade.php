@@ -138,7 +138,7 @@
             {{-- Aktivitas --}}
 
             {{-- Video Profil --}}
-            <div class="pt-24 bg-slate-700">
+            <div class="pt-24 bg-gradient-to-t from-cyan-700 to-[#b0f6ff]">
                 <div class="w-3/4 aspect-w-16 aspect-h-7 mx-auto">
                     <iframe src="https://www.youtube.com/embed/eR4R9scxNOo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
