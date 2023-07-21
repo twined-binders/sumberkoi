@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Postingan;
 use App\Models\Post;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,8 @@ Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
 
-Route::resource('post', PostController::class);
+Route::resource('post', PostController::class)->middleware('login.protected');
+
+Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 

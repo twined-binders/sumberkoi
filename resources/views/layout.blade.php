@@ -80,6 +80,9 @@
                             <li class="mb-4">
                                 <a href="{{ route('kontak') }}" class="hover:underline">Kontak</a>
                             </li>
+                            <li class="mb-4">
+                                <a href="{{ route('post.index') }}" class="hover:underline">Admin</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
