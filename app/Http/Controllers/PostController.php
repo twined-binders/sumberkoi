@@ -64,7 +64,8 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $data = Post::findOrFail($id);
+        return view('crud.show', compact('data'));
     }
 
     /**
@@ -97,7 +98,7 @@ class PostController extends Controller
 
         if ($post) {
             return redirect()
-                ->route('artikel')
+                ->route('post.index')
                 ->with([
                     'success' => 'New post has been created successfully'
                 ]);

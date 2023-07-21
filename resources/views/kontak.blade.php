@@ -18,7 +18,7 @@
     @section('konten')
 
     <div>
-        <div class="mx-auto mt-16 w-11/12 p-10 shadow-xl">
+        <div class="mx-auto mt-16 w-11/12 p-10 shadow-xl mb-16 rounded-xl">
             <div class="container static mx-auto p-8">
                 <div class="rounded-lg border bg-cyan-700 p-6 shadow-lg">
                     <p class="text-3xl text-white">Hubungi Kami</p>
