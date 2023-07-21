@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class PostController extends Controller
 {
@@ -12,8 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        // $data = Postingan::latest()->get();
-        // return view('artikel', compact('data'));
+        $data = Post::latest()->get();
+        return view('crud.list', compact('data'));
     }
 
     /**
@@ -30,7 +32,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'judul' => 'require',
+            'judul' => 'required',
             'artikel' => 'required',
             'penulis' => 'required'
         ]);
@@ -70,7 +72,8 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data = Post::findOrFail($id);
+        return view('crud.edit', compact('data'));
     }
 
     /**
@@ -78,7 +81,34 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $this->validate($request, [
+            'judul' => 'required',
+            'artikel' => 'required',
+            'penulis' => 'required'
+        ]);
+
+        $post = Post::findOrFail($id);
+
+        $post -> update([
+            'judul' => $request->judul,
+            'artikel' => $request->artikel,
+            'penulis' => $request->penulis
+        ]);
+
+        if ($post) {
+            return redirect()
+                ->route('artikel')
+                ->with([
+                    'success' => 'New post has been created successfully'
+                ]);
+        } else {
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with([
+                    'error' => 'Some problem occurred, please try again'
+                ]);
+        }
     }
 
     /**
@@ -86,6 +116,21 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $post->delete();
+
+        if ($post) {
+            return redirect()
+                ->route('post.index')
+                ->with([
+                    'success' => 'Post has been deleted successfully'
+                ]);
+        } else {
+            return redirect()
+                ->route('post.index')
+                ->with([
+                    'error' => 'Some problem has occurred, please try again'
+                ]);
+        }
     }
 }

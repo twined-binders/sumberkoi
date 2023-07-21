@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Postingan;
 use App\Models\Post;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/artikel', function () {
-    $data = DB::table('post')->get();
+    $data = DB::table('posts')->get();
     return view('artikel', compact('data'));
 })->name('artikel');
 
@@ -36,35 +37,35 @@ Route::get('/create', function () {
     return view('crud.create');
 })->name('create');
 
-Route::post('/store', function () {
-    $this->validate($request, [
-        'judul' => 'require',
-        'artikel' => 'required',
-        'penulis' => 'required'
-    ]);
+// Route::post('/store', function () {
+//     $this->validate($request, [
+//         'judul' => 'require',
+//         'artikel' => 'required',
+//         'penulis' => 'required'
+//     ]);
 
-    $post = Post::create([
-        'judul' => $request->judul,
-        'artikel' => $request->artikel,
-        'penulis' => $request->penulis
-    ]);
+//     $post = Post::create([
+//         'judul' => $request->judul,
+//         'artikel' => $request->artikel,
+//         'penulis' => $request->penulis
+//     ]);
 
-    if ($post) {
-        return redirect()
-            ->route('artikel')
-            ->with([
-                'success' => 'New post has been created successfully'
-            ]);
-    } else {
-        return redirect()
-            ->back()
-            ->withInput()
-            ->with([
-                'error' => 'Some problem occurred, please try again'
-            ]);
-    }
-})->name('store');
+//     if ($post) {
+//         return redirect()
+//             ->route('artikel')
+//             ->with([
+//                 'success' => 'New post has been created successfully'
+//             ]);
+//     } else {
+//         return redirect()
+//             ->back()
+//             ->withInput()
+//             ->with([
+//                 'error' => 'Some problem occurred, please try again'
+//             ]);
+//     }
+// })->name('store');
 
-Route::resource('post', Post::class);
+Route::resource('post', PostController::class);
 
 
