@@ -40,8 +40,8 @@
             </div>
             <div class="mt-10">
                 <div class="flex justify-end gap-7">
-                    <button type="submit">Simpan</button>
-                    <a href="{{ route('artikel') }}">Kembali</a>
+                    <button type="submit" class="bg-green-400 py-4 px-2 text-center rounded-md font-medium hover:bg-green-300 hover:scale-105 hover:shadow-xl hover:border border-green-400 duration-200">Simpan</button>
+                    <a href="{{ route('post.index') }}" class="bg-sky-400 py-4 px-2 text-center rounded-md font-medium hover:bg-sky-300 hover:scale-105 hover:shadow-xl hover:border border-sky-400 duration-200 hover:no-underline">Kembali</a>
                 </div>
             </div>
         </div>

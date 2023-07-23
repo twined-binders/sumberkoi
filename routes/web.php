@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Postingan;
 use App\Models\Post;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PinController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +34,16 @@ Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
 
-Route::resource('post', PostController::class)->middleware('login.protected');
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin');
 
-Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::resource('post', PostController::class)->middleware('auth');
 
 
+
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');

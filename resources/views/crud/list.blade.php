@@ -51,6 +51,10 @@
             </tbody>
         </table>
     </div>
+    <div class="w-44 mx-auto mb-12">
+        <a href="{{ route('post.create') }}" class="block w-full bg-green-400 py-2 px-1s text-center rounded-md font-medium hover:bg-green-300 hover:scale-105 hover:shadow-xl hover:border border-green-400 duration-200">Buat Postingan</a>
+    </div>
     @endsection
+
 </body>
 </html>
