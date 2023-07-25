@@ -28,9 +28,10 @@
                 </tr>
             </thead>
             <tbody>
+
                 @forelse ($data as $artikel)
                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <td class="px-6 py-3">{{$artikel->id}}</td>
+                    <td class="px-6 py-3">{{$loop->iteration}}</td>
                     <td class="px-6 py-3">{{$artikel->judul}}</td>
                     <td class="px-6 py-3">{{$artikel->penulis}}</td>
                     <td class="px-6 py-3">{{$artikel->created_at}}</td>
