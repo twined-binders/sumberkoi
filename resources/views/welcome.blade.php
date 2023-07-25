@@ -41,51 +41,51 @@
                 <p class="text-slate-500 leading-loose"><span class="font-semibold text-lg">Sumber Koi</span> adalah Usaha Budidaya Ikan Koi | Pasar Ikan Koi | Pusat Distribusi Ikan Koi Blitar. Menyediakan berbagai macam ukuran ikan untuk keperluan kolam, Bibit maupun Indukan, siap kirim ke seluruh Indonesia dengan garansi aman sampai tujuan</p>
             </div>
         </div>
-        <div class="mt-16">
+        <div class="mt-16 mx-6">
             <div class="flex gap-16 justify-center">
                 <div class="flex w-80 gap-3">
                     <img src="{{ url('/img/package.svg') }}" alt="" style="height: 50px">
                     <div class="">
                         <p class="font-semibold">Stok Melimpah</p>
-                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggta kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
+                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggota kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
                     </div>
                 </div>
                 <div class="flex w-80 gap-3">
-                    <img src="{{ url('/img/package.svg') }}" alt="" style="height: 50px">
+                    <img src="{{ url('/img/award.svg') }}" alt="" style="height: 50px">
                     <div class="">
-                        <p class="font-semibold">Stok Melimpah</p>
-                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggta kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
+                        <p class="font-semibold">Kualitas Ikan</p>
+                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai kulaitas yang beragam mulai ragam kualitas diduaikan dengan kebutuhan</p>
                     </div>
                 </div>
                 <div class="flex w-80 gap-3">
-                    <img src="{{ url('/img/package.svg') }}" alt="" style="height: 50px">
+                    <img src="{{ url('/img/dollar-sign.svg') }}" alt="" style="height: 50px">
                     <div class="">
-                        <p class="font-semibold">Stok Melimpah</p>
-                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggta kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
+                        <p class="font-semibold">Harga Murah</p>
+                        <p class="text-slate-500 leading-loose">Sumber Koi menyediakan Ikan dengan harga yang sangat terjangkau. Silakan buktikan dengan order di farm kami</p>
                     </div>
                 </div>
 
             </div>
             <div class="flex gap-16 justify-center mt-7">
                 <div class="flex w-80 gap-3">
-                    <img src="{{ url('/img/package.svg') }}" alt="" style="height: 50px">
+                    <img src="{{ url('/img/check-circle.svg') }}" alt="" style="height: 50px">
                     <div class="">
-                        <p class="font-semibold">Stok Melimpah</p>
-                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggta kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
+                        <p class="font-semibold">100% Garansi</p>
+                        <p class="text-slate-500 leading-loose">Sumber Koi siap mengganti ikan jika mati dalam perjalanan dengan mengirim video unboxing</p>
                     </div>
                 </div>
                 <div class="flex w-80 gap-3">
-                    <img src="{{ url('/img/package.svg') }}" alt="" style="height: 50px">
+                    <img src="{{ url('/img/message-square.svg') }}" alt="" style="height: 50px">
                     <div class="">
-                        <p class="font-semibold">Stok Melimpah</p>
-                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggta kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
+                        <p class="font-semibold">Free Konsultasi</p>
+                        <p class="text-slate-500 leading-loose">Sumber Koi siap melayani anda yang membutuhkan konsultasi dalam hal budidaya maupun pemasaran</p>
                     </div>
                 </div>
                 <div class="flex w-80 gap-3">
-                    <img src="{{ url('/img/package.svg') }}" alt="" style="height: 50px">
+                    <img src="{{ url('/img/truck.svg') }}" alt="" style="height: 50px">
                     <div class="">
-                        <p class="font-semibold">Stok Melimpah</p>
-                        <p class="text-slate-500 leading-loose">Sumber Koi mempunyai anggta kelompok tani koi yang siap mensuplai kebutuhan koi seluruh indonesia</p>
+                        <p class="font-semibold">Pengiriman Cepat</p>
+                        <p class="text-slate-500 leading-loose">Sumber Koi biasa mengirim keseluruh Indonesia dengan menggunakan jasa pengiriman terpercaya dan cepat</p>
                     </div>
                 </div>
 
@@ -105,31 +105,31 @@
                 </div>
             </div>
             <div class="bg-[#b0f6ff] pt-32 pb-24">
-                <div class="mx-6 flex gap-7 justify-centers">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="w-full" src="/img/aktivitas.jpg" alt="Sunset in the mountains">
+                <div class="mx-6 flex gap-5 justify-center">
+                    <div class="w-full rounded overflow-hidden">
+                        <img class="w-full" src="/img/budidaya.jpg" alt="Sunset in the mountains">
                         <div class="py-4">
                             <div class="font-bold text-xl mb-2">Budidaya</div>
                             <p class="text-gray-700 text-base">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                Koi unggulan jenis Showa sanke shiro dan lain-lain yang masuk kualitas bagus.
                             </p>
                         </div>
                     </div>
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="w-full" src="/img/aktivitas.jpg" alt="Sunset in the mountains">
+                    <div class="w-full rounded overflow-hidden">
+                        <img class="w-full" src="/img/jualbeli.jpg" alt="Sunset in the mountains">
                         <div class="py-4">
-                            <div class="font-bold text-xl mb-2">Budidaya</div>
+                            <div class="font-bold text-xl mb-2">Jual Beli</div>
                             <p class="text-gray-700 text-base">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                Sumber Koi menyediakan paket isian kolam dengan harga yang lebih terjangkau
                             </p>
                         </div>
                     </div>
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="w-full" src="/img/aktivitas.jpg" alt="Sunset in the mountains">
+                    <div class="w-full rounded overflow-hidden">
+                        <img class="w-full" src="/img/edukasi.jpg" alt="Sunset in the mountains">
                         <div class="py-4">
-                            <div class="font-bold text-xl mb-2">Budidaya</div>
+                            <div class="font-bold text-xl mb-2">Edukasi</div>
                             <p class="text-gray-700 text-base">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                Bagi para jurangan kami sediakan kolam kolam yang siap diangkut secara borongan
                             </p>
                         </div>
                     </div>
