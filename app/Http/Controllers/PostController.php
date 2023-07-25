@@ -6,6 +6,8 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -37,6 +39,24 @@ class PostController extends Controller
             'penulis' => 'required'
         ]);
 
+        $content = $request->artikel;
+    preg_match_all('/<img[^>]+src="data:image\/([^;]+);base64,([^">]+)"[^>]*>/', $content, $matches);
+
+    foreach ($matches[0] as $key => $img) {
+        $extension = $matches[1][$key];
+        $data = base64_decode($matches[2][$key]);
+
+        // Generate a unique filename
+        $filename = Str::random(20) . '.' . $extension;
+
+        // Store the image using Laravel's Storage facade
+        Storage::disk('public')->put('ImagesArtikel/' . $filename, $data);
+
+        // Replace the base64 encoded image with the new path in the content
+        $content = str_replace($img, '<img src="' . asset('storage/ImagesArtikel/' . $filename) . '">', $content);
+    }
+    
+
         $post = Post::create([
             'judul' => $request->judul,
             'artikel' => $request->artikel,
@@ -45,7 +65,7 @@ class PostController extends Controller
 
         if ($post) {
             return redirect()
-                ->route('artikel')
+                ->route('post.index')
                 ->with([
                     'success' => 'New post has been created successfully'
                 ]);

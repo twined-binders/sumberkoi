@@ -24,7 +24,7 @@ use Illuminate\Support\Str;
         <div class="shadow-lg rounded-lg p-6 mb-7">
             <div>
                 <a href="{{ route('post.show', $artikel->id) }}" class="block mb-4 font-semibold">{{$artikel->judul}}</a>
-                <p class="text-sm text-slate-500 ">{!! Str::limit($artikel->artikel, 300) !!}</p>
+                <p class="text-sm text-slate-500 ">{!! mb_substr(strip_tags($artikel->artikel, '<p>'), 0, 300) !!}</p>
             </div>
             <hr class="mb-5 mt-7">
             <div class="mt-4 flex gap-12 text-slate-400">
@@ -33,6 +33,7 @@ use Illuminate\Support\Str;
             </div>
         </div>
         @empty
+        <p>Tidak ada Artikel untuk ditampilkan....</p>
 
         @endforelse
     </div>
